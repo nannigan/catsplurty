@@ -1,0 +1,9 @@
+<h2>Create Your Quote!</h2>
+<!-- input_html: { class: 'special' } can pass css to html el here -->
+<%= simple_form_for @quote do |f| %>
+  <%= f.input :saying %>
+  <br><br>
+<%= f.input :author %>
+<br><br>
+<%= f.submit 'save it!', :class => 'btn btn-primary' %>
+<% end %>

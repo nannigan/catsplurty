@@ -13,16 +13,15 @@
 <body>
 <header>
 	<div class="col-xs-2"> <div class="logo-kitty">
-      
-       
+       <%= link_to root_path do %>
         <%= image_tag("logo-kitty.png", :alt => "Kitty!") %>
-      
+      <% end %>
      
       </div></div>
 
 	<div  class="col-xs-5 slogan">splurting out unsolicited feline advice since 2014!</div>
 	<div class="col-xs-5 links">
-      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'Contribute', new_quote_path %>
       <%= link_to 'About', '#' %>
     </div>
 </header>
@@ -34,11 +33,12 @@
 <div class ='footer'>
 	<div class = 'container'>
 		<div class="col-xs-6">
-			<%= link_to "Meeeeow, more!", "#" %>
+		
+			<%= link_to 'Meeeeeow, more!', root_path %>
         
       </div>
       <div class="col-xs-6 footer-blurb">
-        Hacked by the ever so humble human of &ldquo;HRH Sheikh Attabiyah Cuddlebutt Snorglesworthy Snugglemeister in Oaktown CA&rdquo;.
+        Hacked by the ever so humble human of &ldquo;HRH Sheikh Attabiyah Cuddlebutt Snorglesworthy Snugglemeister&rdquo; in Oaktown CA.
       </div>
 	</div>
 	

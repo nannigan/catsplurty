@@ -12,6 +12,9 @@ gem 'sass-rails', '~> 4.0.0'
 #bootstrap 3
 gem 'bootstrap-sass', '~> 3.2.0'
 
+# form gem
+gem 'simple_form'
+
 #autoprefixer
 gem 'autoprefixer-rails'
 
