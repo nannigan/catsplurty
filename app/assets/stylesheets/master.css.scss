@@ -76,11 +76,16 @@ hr{
    -ms-transform: rotate(-11deg); /* IE 9 */
  -webkit-transform: rotate(-11deg); 
 }
+.quote{
+	width:90%;
+	margin: 2px auto;
+}
 
 .quote-body{
 	font-family: Roboto Slab;
 	font-size: 2em;
 	font-weight: bold;
+	color:#6896a2;
 }
 .quote-attr{
 	font-family: Roboto Slab;
