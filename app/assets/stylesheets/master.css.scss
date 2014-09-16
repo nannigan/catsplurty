@@ -1,0 +1,96 @@
+// @font-face {
+//   font-family: 'Lobster';
+//   src:url('http://fonts.googleapis.com/css?family=Lobster');
+//   font-weight: 400;
+// }
+
+// @font-face {
+//   font-family: 'Roboto Slab';
+//   src:url('http://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+//   font-weight: 400;
+// }
+html{
+	font-size: 16px
+	}
+body{
+	font-size: 100%
+	}
+
+header {
+  border-top: 8px solid #6896a2;
+}
+hr{
+	border:1px dotted #a7bab9;
+}
+.clear{
+  clear:both;
+}
+.clear:after{
+  content:" ";
+  display:block;
+  height:0;
+  font-size:0;
+  clear:both;
+  visibility:hidden;
+}
+
+
+.links{
+		padding-top:20px;
+}	
+
+.links a {
+	color:#6896a2;
+	padding:0 20px;
+	border-right: 1px dotted #a7bab9;
+}	
+.links a:last-child {
+	border: none;
+}	
+
+// .circle{
+//   font-weight: bold;
+//   font-style: italic;
+//   position: relative;
+//   border-radius: 100%;
+//   background: #59cad4;
+//   // border: 1px solid #F7F7F7;
+//   width: 80px;
+//   height: 80px;
+//   margin: 10px 10px;
+//   text-align: center;
+//   color: #FFF;
+//   font-size: 10px;
+//   line-height: 16px;
+//   cursor: pointer;
+//   transform: rotate(-11deg); 
+//    -ms-transform: rotate(-11deg); /* IE 9 */
+//  -webkit-transform: rotate(-11deg); /* Opera, Chrome, and Safari */
+//   // shouldn't the browser-specific expressions go first?
+
+// }
+
+.logo-kitty{
+	margin-top: 8px;
+	  transform: rotate(-11deg); 
+   -ms-transform: rotate(-11deg); /* IE 9 */
+ -webkit-transform: rotate(-11deg); 
+}
+
+.quote-body{
+	font-family: Roboto Slab;
+	font-size: 2em;
+	font-weight: bold;
+}
+.quote-attr{
+	font-family: Roboto Slab;
+	font-size: 1em;
+	font-weight: 400;
+}
+.slogan{
+	font-family: Lobster;
+	font-size: 1.6em;
+	letter-spacing:.04em;
+	color:#a7bab9;
+	padding-top: 20px;
+}

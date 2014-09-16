@@ -3,18 +3,28 @@
 <head>
   <title>Catsplurty</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", "http://fonts.googleapis.com/css?family=Lobster"%>
+    <%= stylesheet_link_tag    "application", "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700"%>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 <header>
-	<div class="col-xs-3"><!-- <img src="../assets/images/logo-kitty.png"/> -->logo</div>
-	<div  class="col-xs-4">Splurting out unsolicited feline advice since 2014!</div>
-	<div class="col-xs-5">
+	<div class="col-xs-2"> <div class="logo-kitty">
+      
+       
+        <%= image_tag("logo-kitty.png", :alt => "Kitty!") %>
+      
+     
+      </div></div>
+
+	<div  class="col-xs-5 slogan">splurting out unsolicited feline advice since 2014!</div>
+	<div class="col-xs-5 links">
       <%= link_to 'Contribute', '#' %>
       <%= link_to 'About', '#' %>
     </div>
 </header>
+  <hr class="clear">
 <!-- <br class="cf" bootstrap native>
 <br class="clear"> -->
 <div class='col-xs-12'>	<%= yield %></div>
