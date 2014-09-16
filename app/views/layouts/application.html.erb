@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+	<div class="col-xs-3"><!-- <img src="../assets/images/logo-kitty.png"/> -->logo</div>
+	<div  class="col-xs-4">Splurting out unsolicited feline advice since 2014!</div>
+	<div class="col-xs-5">
+      <%= link_to 'Contribute', '#' %>
+      <%= link_to 'About', '#' %>
+    </div>
+</header>
+<!-- <br class="cf" bootstrap native>
+<br class="clear"> -->
+<div class='col-xs-12'>	<%= yield %></div>
 
-<%= yield %>
+
 
 </body>
 </html>
