@@ -25,7 +25,7 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-						<%= f.input :saying, :label => "What is the feline wisdom you wish to add?", :placeholder => "Clean black things--perfect for fur deposit" %>
+						<%= f.input :saying, :label => "What is the feline wisdom you wish to add?", :placeholder => "Clean black things--perfect for fur deposition" %>
 						<br><br>
 						<%= f.input :author, :label => "Name of feline imparter of said wisdom?", :placeholder => "Mr. Snow" %>
 
@@ -39,7 +39,7 @@
   </div>
   <!-- end Modal -->
 
-	<div class="col-xs-2"> <div class="logo-kitty">
+	<div class="col-xs-12 col-sm-2"> <div class="logo-kitty">
        <%= link_to root_path do %>
         <%= image_tag("logo-kitty.png", :alt => "Kitty!", :class => 'img-responsive') %>
       <% end %>
@@ -47,10 +47,10 @@
       </div></div>
 
 	<div  class="col-sm-5 hidden-xs slogan">splurting out unsolicited feline advice since 2014!</div>
-	<div class="col-xs-8 col-xs-offset-1 col-sm-offset-1 col-sm-4 links">
+	<div class="col-xs-8 col-xs-offset-1  col-sm-4 links">
       <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
       <%= link_to 'About', about_path %>
-         <!-- 
+         <!--  col-sm-offset-1
       <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
         Launch demo modal
       </button> -->
@@ -71,14 +71,14 @@
 		<div class="col-xs-12 col-sm-6">
 		 <br>
        
-			<%= link_to 'Meeeeeow, more!', root_path %>
+			<%= link_to 'Meeeeeow, MINE, more!', root_path %>
         <br>
         
       </div>
       <div class="col-xs-12 col-sm-6 footer-blurb">
       	 <br>
         
-        Hacked by the ever so humble human of &ldquo;HRH Sheikh Attabiyah Cuddlebutt Snorglesworthy Snugglemeister&rdquo; in Oaktown CA.
+        Hacked by the ever so humble human slave to <em>HRH Sheikh Attabiyah Cuddlebutt Snorglesworthy Snugglemeister</em> of Oaktown CA.
         
         <br>
       </div>

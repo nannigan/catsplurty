@@ -15,14 +15,48 @@ html{
 
 body{
 	font-size: 100%;
+	font-family: Roboto Condensed, sans-serif;
 	}
 
 header {
   border-top: 8px solid #6896a2;
 }
+
+h1, h2, h3, h4, h5{
+	font-family: Roboto Slab, serif;
+} 
+//why  doesn't h2 on about inherit this?
+
+
 hr{
 	border:1px dotted #a7bab9;
 }
+
+label{
+	font-family: Roboto Condensed, sans-serif;
+}
+
+p{
+	font-family: Roboto Condensed, sans-serif;
+}
+
+small{
+	font-family: Roboto Condensed, sans-serif;
+}
+
+
+
+a:hover, a:active, a:focus{
+	color: #a7bab9;
+	font-size: 200%;
+	text-decoration: none;
+	border: none;
+}
+
+.alert-danger{
+	z-index:1000;
+}
+
 .clear{
   clear:both;
 }
@@ -35,12 +69,27 @@ hr{
   visibility:hidden;
 }
 
+.head{
+	font-family: Roboto Slab, serif;
+} 
+
+.modal-header>h2{
+	font-family: Roboto Slab, serif;
+	color: #6896a2;
+}
+
 .btn-primary-blk{
 	background: #000;
-	border-radius: none;
+	font-family: Roboto Slab, serif;
 	color: #fff;
 }
 
+.modal-footer input:hover{
+	background: #000;
+	font-family: Roboto Slab, serif;
+	color: #a7bab9;
+	text-decoration: none;
+}
 
 .links{
 		padding-top:20px;
@@ -50,37 +99,24 @@ hr{
 	color:#6896a2;
 	// font-family: Roboto Slab;
 	// font-weight: 700;
-	font-family: Roboto Condensed;
+	font-family: Roboto Condensed, sans-serif;
 	letter-spacing: .18em;
 	font-size: 1.2em;
 	padding:0 20px;
 	border-right: 1px dotted #a7bab9;
 }	
+
 .links a:last-child {
 	border: none;
 }	
 
-// .circle{
-//   font-weight: bold;
-//   font-style: italic;
-//   position: relative;
-//   border-radius: 100%;
-//   background: #59cad4;
-//   // border: 1px solid #F7F7F7;
-//   width: 80px;
-//   height: 80px;
-//   margin: 10px 10px;
-//   text-align: center;
-//   color: #FFF;
-//   font-size: 10px;
-//   line-height: 16px;
-//   cursor: pointer;
-//   transform: rotate(-11deg); 
-//    -ms-transform: rotate(-11deg); /* IE 9 */
-//  -webkit-transform: rotate(-11deg); /* Opera, Chrome, and Safari */
-//   // shouldn't the browser-specific expressions go first?
+.links a:hover{
+	color: #a7bab9;
+	font-size: 125%;
+	text-decoration: none;
+	border: none;
+}
 
-// }
 
 .logo-kitty{
 	margin-top: 8px;
@@ -91,24 +127,44 @@ hr{
 	  border: none;
 	  overflow: visible;
 }
+
 .quote{
 	width:90%;
 	margin: 2px auto;
+	margin-bottom: 80px;
+	//more than the footer so footer won't sit on top of quote
 }
 
 .quote-body{
-	font-family: Roboto Slab;
+	font-family: Roboto Slab, Georgia, serif;
 	font-size: 2em;
 	font-weight: bold;
 	color:#6896a2;
+	hanging-punctuation: first;
+	//from css tricks
 }
+
+// .quote-body::before{
+// 	content:'\0092';
+// }
+// .qote-body::after{
+// 	content:'\0093';
+// }
+.quote{
+		
+		//more than the footer so footer won't sit on top of quote
+}
+
 .quote-attr{
-	font-family: Roboto Slab;
+	font-family: Roboto Slab, Georgia, serif;
 	font-size: 1em;
 	font-weight: 400;
+	padding-left: .75em;
+
+	// text-align: right;
 }
 .slogan{
-	font-family: Lobster;
+	font-family: Lobster, serif;
 	font-size: 1.6em;
 	letter-spacing:.04em;
 	color:#a7bab9;
@@ -116,7 +172,29 @@ hr{
 }
 
 @media (max-width: 750px) {
+
+body{
+	margin-bottom: 120px;
+}
+.quote{
+		margin-bottom: 140px;
+		//more than the footer so footer won't sit on top of quote
+}
+
+.footer{
+  	height: 120px;
+  	background-color: #6896a2;
+}
   .footer-blurb {
     text-align: left;
   }
+
+  .links a{
+  	border-bottom: 1px dotted #a7bab9;
+  	border-right:none;
+  }
+  .links a:last-child {
+	border-bottom: 1px dotted #a7bab9;
+}	
+  	
 }
