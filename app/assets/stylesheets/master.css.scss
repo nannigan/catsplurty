@@ -35,6 +35,12 @@ hr{
   visibility:hidden;
 }
 
+.btn-primary-blk{
+	background: #000;
+	border-radius: none;
+	color: #fff;
+}
+
 
 .links{
 		padding-top:20px;
@@ -81,8 +87,9 @@ hr{
 	  transform: rotate(-11deg); 
    -ms-transform: rotate(-11deg); /* IE 9 */
  -webkit-transform: rotate(-11deg); 
-	    text-decoration: none;
+	  text-decoration: none;
 	  border: none;
+	  overflow: visible;
 }
 .quote{
 	width:90%;
@@ -106,4 +113,10 @@ hr{
 	letter-spacing:.04em;
 	color:#a7bab9;
 	padding-top: 20px;
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
 }
