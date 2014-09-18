@@ -40,15 +40,16 @@
   <!-- end Modal -->
 
 	<div class="col-xs-12 col-sm-2"> <div class="logo-kitty">
+    <!-- this will let us put thing[s] inside a link -->
        <%= link_to root_path do %>
-        <%= image_tag("logo-kitty.png", :alt => "Kitty!", :class => 'img-responsive') %>
+        <%= image_tag("logo-kitty.png", :alt => "Kitty!", :class => 'img-responsive logo') %>
       <% end %>
      
       </div></div>
 
 	<div  class="col-sm-5 hidden-xs slogan">splurting out unsolicited feline advice since 2014!</div>
 	<div class="col-xs-8 col-xs-offset-1  col-sm-4 links">
-      <%= link_to 'Contribute', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
+      <%= link_to 'Add kitty splurt', '#', :data => {:toggle => 'modal', :target => '#myModal'} %>
       <%= link_to 'About', about_path %>
          <!--  col-sm-offset-1
       <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">

@@ -32,13 +32,16 @@ hr{
 	border:1px dotted #a7bab9;
 }
 
+// img{
+// 	border: 8px solid #a7bab9;
+// }
+//why doesn't this work
+
 label{
 	font-family: Roboto Condensed, sans-serif;
 }
 
-p{
-	font-family: Roboto Condensed, sans-serif;
-}
+
 
 small{
 	font-family: Roboto Condensed, sans-serif;
@@ -52,6 +55,16 @@ a:hover, a:active, a:focus{
 	text-decoration: none;
 	border: none;
 }
+
+.row{
+	margin-top:20px;
+}
+
+.img{
+	border: 8px solid #6896a2;
+	border-top: none;
+	border-bottom: none;
+	}
 
 .alert-danger{
 	z-index:1000;
@@ -72,6 +85,10 @@ a:hover, a:active, a:focus{
 .head{
 	font-family: Roboto Slab, serif;
 } 
+
+.intro{
+	padding-bottom:20px;
+}
 
 .modal-header>h2{
 	font-family: Roboto Slab, serif;
@@ -131,6 +148,9 @@ a:hover, a:active, a:focus{
 .quote{
 	width:90%;
 	margin: 2px auto;
+}
+
+.quote, .para-last{
 	margin-bottom: 80px;
 	//more than the footer so footer won't sit on top of quote
 }
@@ -150,10 +170,7 @@ a:hover, a:active, a:focus{
 // .qote-body::after{
 // 	content:'\0093';
 // }
-.quote{
-		
-		//more than the footer so footer won't sit on top of quote
-}
+
 
 .quote-attr{
 	font-family: Roboto Slab, Georgia, serif;
@@ -176,7 +193,7 @@ a:hover, a:active, a:focus{
 body{
 	margin-bottom: 120px;
 }
-.quote{
+.quote, .para-last{
 		margin-bottom: 140px;
 		//more than the footer so footer won't sit on top of quote
 }
@@ -195,6 +212,9 @@ body{
   }
   .links a:last-child {
 	border-bottom: 1px dotted #a7bab9;
-}	
+	}	
+	.logo {
+		margin-bottom: 10px;
+	}
   	
 }
