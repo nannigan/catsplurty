@@ -2,12 +2,12 @@
 <html>
 <head>
   <title>Catsplurty</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
     <%= stylesheet_link_tag    "application", "http://fonts.googleapis.com/css?family=Lobster"%>
     <%= stylesheet_link_tag    "application", "http://fonts.googleapis.com/css?family=Roboto+Slab:400,700"%>
     <%= stylesheet_link_tag    "application", "http://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic"%>
     
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -25,7 +25,8 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
         <div class="modal-body">
-						<%= f.input :saying, :label => "What is the feline wisdom you wish to add?", :placeholder => "Clean black things--perfect for fur deposition" %>
+						<%= f.input :saying, :label => "What is the feline wisdom you wish to add?", :placeholder => "Clean black things perfect for fur deposition" %>
+           <!--  <%# h(this & that) %> supposed to escape html -->
 						<br><br>
 						<%= f.input :author, :label => "Name of feline imparter of said wisdom?", :placeholder => "Mr. Snow" %>
 
