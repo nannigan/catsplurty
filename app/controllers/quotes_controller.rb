@@ -11,6 +11,11 @@ class QuotesController < ApplicationController
 		redirect_to root_path
 	end
 
+	def show
+		@quote = Quote.find(params[:id])
+		# from URL with show/id
+	end
+
 	def about
 
 	end
@@ -19,6 +24,6 @@ class QuotesController < ApplicationController
   private
 
 	def quote_params
-		params.require(:quote).permit(:saying, :author)
+		params.require(:quote).permit(:saying, :author, )
 	end
 end
