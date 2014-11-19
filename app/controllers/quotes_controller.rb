@@ -14,9 +14,9 @@ class QuotesController < ApplicationController
 	def show
 		#@quote = Quote.find(params,[:id])
 		@quote = Quote.where(:id => params[:id]).first
-		    if @quote.blank?
-      render :text => "Not Found", :status => :not_found
-    end
+		  #   if @quote.blank?
+    #   render :text => "Not Found", :status => :not_found
+    # end
 	end
 
 	def about
