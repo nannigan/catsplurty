@@ -25,5 +25,13 @@ module Catsplurty
 
     # Precompile additional  font formats assets
     #config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+
+
+
+    config.i18n.enforce_available_locales = false
+    # get rid of deprecation message in test
+
+        config.exceptions_app = self.routes
   end
 end
