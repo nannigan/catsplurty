@@ -13,10 +13,12 @@ class QuotesController < ApplicationController
 
 	def show
 		#@quote = Quote.find(params,[:id])
-		@quote = Quote.where(:id => params[:id]).first
-		  #   if @quote.blank?
-    #   render :text => "Not Found", :status => :not_found
-    # end
+		# see TDD lesson p.4-- find makes all fail if 404 test is writtne
+	@quote = Quote.where(:id => params[:id]).first
+		# where the id is the params id get the first one--longhand
+		if @quote.blank?
+      render :text => "Not Found", :status => :not_found
+    end
 	end
 
 	def about
